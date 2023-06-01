@@ -7,13 +7,29 @@
   - `if` the number is odd print the message "number is odd"
 */
 
+let num = Number(prompt(`Enter the number`));
+
+if( num % 2 === 0){
+alert(`Number is even`)
+}else{
+alert(`Number is odd`)
+}
 
 // 2. Write a program to accept two numbers from user using`prompt` and alert the max value.
+let num1 = Number(prompt(`Enter first number`));
+let num2 = Number(prompt(`Enter second number`));
+
+
+if( num1 > num2 ){
+  alert(`${num1} is greater than ${num2}`)
+  }else{
+  alert(`${num2} is greater than ${num1}`)
+  }
 
 
 // 3. Convert the above code using`?` terniary operator
 
-
+num1 > num2 ?  alert(`${num1} is greater than ${num2}`) : alert(`${num2} is greater than ${num1}`)
 
 
 
@@ -25,9 +41,25 @@
 
   //By else if
 
+let houseName = prompt(`Enter house Name`)
 
+// if(houseName === "stark"){
+//   console.log("Winter is coming")
+// } else if (houseName === "lannister"){
+//   console.log("A lannister always pays his debt")
+// } else{
+//   console.log( "All men must die")
+// }
 
 // 5. Convert the above code using`?` terniary operator
+
+houseName === "stark" ? console.log("Winter is coming"):
+ houseName === "lannister" ? console.log("A lannister always pays his debt"): 
+console.log( "All men must die")
+
+
+
+
 
 
 // Switch
@@ -40,8 +72,35 @@
 
 // 6. Write a program that takes the number of the month(1 - 12) and alert number of days in the month.
 
-
+// February - 28
+// January, March, May, July, August, October , december - 31
+// all left are -30
  
+let month = prompt (`Enter the month name`)
+
+switch (month) {
+  case ("January" || "March" || "May" || "July" || "August" || "October" || "December"):
+    alert(`It has 31 days`);
+    break;
+   case ("April" || "June" || "September" || "November"):
+   alert(`It has 30 days`);
+   break;
+   case ("February"):
+    alert(`It has 28 days`);
+    break;
+   default:
+    alert(`Enter the Months only`);
+    break;
+}
+
+
+
+
+
+
+
+
+
 
 /* 7.
 - Write a program that take the salery of the user using prompt and alert the in -hand amount.You will find out the in -hand amount by deducting the tax amoun from salery.Conditions are given below.
