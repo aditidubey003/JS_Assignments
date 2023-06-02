@@ -102,6 +102,9 @@ switch (month) {
 
 
 
+
+
+
 /* 7.
 - Write a program that take the salery of the user using prompt and alert the in -hand amount.You will find out the in -hand amount by deducting the tax amoun from salery.Conditions are given below.
   - `Salary <= 20000` tax is 10 %
@@ -125,14 +128,29 @@ Implement the condition give below using`if..else` and`switch` statement.
 
 */
 
+
+
+
 /*If else*/
 
-
+let marks = Number(prompt('Enter your marks'))
+if(marks > 100){
+  alert(`Marks can't be greater than 100`);
+} else if (marks > 80 && marks < 100) {
+  alert(`Grade A`);
+} else if (marks > 50 && marks < 80){
+  alert(`Grade B`);
+} else if (marks > 30 && marks < 50){
+  alert(`Grade C`);
+} else {
+  alert(`Grade D`);
+}
 
 
 
 /*Switch*/
 //We cannot use relational expressions in switch case.
+// Relational expressions (<, > ,<=, >=)
 
 
 
@@ -146,5 +164,17 @@ Implement the condition give below using`if..else` and`switch` statement.
   - Anything else should alert`Not a valid input`
 */
 
+let weatherCondition = prompt("How's the Weather Outside ?" );
 
+if( weatherCondition === "sunny"){
+  alert(`Wear a T-shirt`);
+} else if (weatherCondition === "rainy"){
+  alert(`Don't forget to take your raincoat`);
+} else if (weatherCondition === "hot"){
+  alert(`Get a hanky`)
+} else if (weatherCondition === "freezing"){
+  alert(`Get your sweeter on`)
+} else {
+  alert(`Not a valid input`)
+}
 
