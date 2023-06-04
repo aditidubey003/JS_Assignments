@@ -77,19 +77,19 @@ Example:
 "hello", -21; // false
 
 */
-let num1 = Number(prompt("Enter first No."));
+let num1 = Number(prompt("Enter first1 No."));
 let num2 = Number(prompt("Enter Second No."));
 
 
-if(num1 === num2){
-    alert(true);
-} else if (typeof num1 || typeof num2 !== "number"){
+
+
+if (typeof num1 !== "number" || typeof num2 !== "number"){
     alert("Enter a valid value");
+} else if (num1 == num2){
+    alert(true);
 } else{
     alert(false);
 }
-
-
 
 //Table of 3
 
