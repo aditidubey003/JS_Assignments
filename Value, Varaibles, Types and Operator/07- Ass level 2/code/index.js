@@ -80,18 +80,26 @@ Example:
 let num1 = Number(prompt("Enter first No."));
 let num2 = Number(prompt("Enter Second No."));
 
+
 if(num1 === num2){
-    alert("they are equal");
-} else (num1 !== num2){
-    alert("they are not equal");
-// } else if(typeof(num1) || typeof(num2) !== number) {
-//     alert("Enter a valid value")
+    alert(true);
+} else if (typeof num1 || typeof num2 !== "number"){
+    alert("Enter a valid value");
+} else{
+    alert(false);
 }
 
 
 
-
-
-
-
 //Table of 3
+
+// 3 * 1 = 3
+// 3 * 2 = 6
+// 3 * 3 = 9
+
+let product = 1;
+
+for(let i = 1; i <= 10; i++){
+    product = 3  * i;
+    console.log(`3 * ${i} = ${product}`);
+}
