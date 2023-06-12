@@ -174,7 +174,8 @@ if (num1 > num2) {
 }
 
 /*
-🎖Write a JavaScript conditional statement to find the sign (+, -) of product of three numbers. Take those three numbers from user using `prompt`. Display an alert box with the specified sign.
+🎖Write a JavaScript conditional statement to find the sign (+, -) of product of three numbers. Take those three numbers from user using `prompt`.
+ Display an alert box with the specified sign.
 */
 let a = Number(prompt("Enter first no."))
 let b = Number(prompt("Enter Second no."))
