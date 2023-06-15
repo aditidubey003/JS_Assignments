@@ -8,23 +8,23 @@ Do the following for the given problem:
 
 // - Write a Function Decleration
 function convertToString (number){
-  return toString(number);
+  return String(number);
   }
 
   
 
 // - Write a Function Expression
 let convertToString = function (number){
-  return toString(number);
+  return String(number);
 }
  
 
 // - Write an Arrow Function without curly brackets (if possible)
-let convertToString = (number) => toString(number);
+let convertToString = (number) => String(number);
 
 // - Write an Arrow Function with curly brackets
 let convertToString = (number) => {
-  return toString(number);
+  return String(number);
 }
 
 
@@ -226,7 +226,7 @@ let isGreater = function(x, y) {
 
 
 // - Write an Arrow Function without curly brackets(if possible)
-// let isGreater = 
+let isGreater = (x, y) => (x > y) ? true: false;
 
 // - Write an Arrow Function with curly brackets
 let isGreater = (x, y) => {
@@ -277,11 +277,17 @@ let oddOrEven = function (num){
 }
 
 // - Write an named Function Expression
-
+let oddOrEven = function evenAndOdd (num){
+  if (num % 2 === 0){
+    return "Number is Even";
+  } else {
+    return "Number is Odd"
+  }
+}
 
 
 // - Write an Arrow Function without curly brackets (hint: use ternary operator)
-
+let oddOrEven = (num) => (num % 2 === 0) ? true : false
 
 // - Write an Arrow Function with curly brackets
 let oddOrEven = (num) => {

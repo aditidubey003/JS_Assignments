@@ -8,6 +8,13 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
+// 1 human year = 7 dog years 
+
+function calculateDogAge (dogAge = 0, rate = 7){
+return dogAge * rate;
+}
+
+
 calculateDogAge(2);
 /*
 2. 🎖Write a function named calculateMoviesToWatch that:
@@ -16,7 +23,13 @@ calculateDogAge(2);
   * [ ] Return the total number of movie you will watch.
 */
 
-calculateMoviesToWatch(30, 3);
+// movies in a year = 12 months * 4 weeks = 48
+const maxAge = 90;
+function calculateMoviesToWatch ( age =  0, moviesNumber = 0){
+return (maxAge - age) * 48 * moviesNumber ;
+}
+
+calculateMoviesToWatch(20, 1);
 
 /*
 3. 🎖Create a function called celsiusToFahrenheit:
@@ -25,13 +38,30 @@ calculateMoviesToWatch(30, 3);
 */
 
 
+// Formula	
+// (0°C × 9/5) + 32 = 32°F
+
+function celsiusToFahrenheit (temperatureInCelsius = 0){
+temperatureInFahrenheit = (temperatureInCelsius * 9/5) + 32;
+return temperatureInFahrenheit ;
+
+}
+
+celsiusToFahrenheit(15);
+
 /*
 4. 🎖Create a function called fahrenheitToCelsius:
   * [ ] Accepts fahrenheit temperature as argument.
   * [ ] Convert it to celsius and return "NN°F is NN°C"
 */
+// Formula
 
+function fahrenheitToCelsius (temperatureInFahrenheit = 0){
+  temperatureInCelsius = (temperatureInFahrenheit- 32) * 5 / 9;
+  return temperatureInCelsius;
+}
 
+fahrenheitToCelsius(100);
 /*
 5. 🎖 Write a function pow(n, x) that returns x in power n.
 
