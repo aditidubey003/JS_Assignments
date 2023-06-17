@@ -70,7 +70,13 @@ fahrenheitToCelsius(100);
   * [ ] If the value of n is below 0 return "The number below 1 is not allowed"
 */
 
-
+function pow (n , x ){
+  if( n < 0){
+  return alert('The number below 1 is not allowed')
+  } else {
+  return n ** x;
+  }
+}
 
 // Test
 pow(3, 2); // 9
@@ -85,17 +91,44 @@ and return sum or product of 1,…,n.
  If user enters any other value than `sum` or `product` 
  alert `Not a valid Input`.
 */
+function sumOrProductOfN(n,string){
 
+let sum = 0; 
+let product = 1;
+
+if(string === "Sum"){
+for(let i = 1; i <= n; i++){
+  sum = sum + i;
+  return sum;
+}
+} else if (string ==="product"){
+for(let i = 1; i <= n; i ++){
+  product = product * i;
+return  product;
+}
+} else{
+return ('Not a valid Input')
+}
+}
 
 sumOrProductOfN(4, 'sum'); // 10
 sumOrProductOfN(4, 'product'); // 24
 sumOrProductOfN(4, 'hello'); // alert "Not a valid Input"
 
+
+
 /*
 6. 🎖Write a program that accepts a number n using argument and return the sum of the numbers 1 to n
 */
+function getSum (n){
+  let sum = 0;
+  for(let i = 1; i <= n; i++){
+    return sum += i;
+  }
+}
 
-
+getSum (4)
+getSum(8)
 /*
 7. 🎖Modify the previous program such that only multiples of 5 or 7 are considered in the sum, e.g. n = 20 (5,7,10,14,15,20) 71
 */
@@ -105,10 +138,24 @@ sumOrProductOfN(4, 'hello'); // alert "Not a valid Input"
 /*
 8. 🎖Write a function `min` that takes two arguments and returns their minimum.
 */
+function min (a, b){
+if(a > b){
+  return ("b is minimum");
+} else{
+  return ("a is minimum");
+}
+}
 
+min(5, 9)
+min(6, 0)
 
 /*
 9. 🎖Write a JavaScript function which accepts an argument and returns the type of the value.
 */
+function typeOfValue (value){
+  return typeof(value);
+}
 
-
+typeOfValue(5)
+typeOfValue('Aditi')
+typeOfValue(true)
