@@ -70,9 +70,9 @@ return min * 60;
    bmi = weight / (height * height)
    if(bmi < 18.5){
    alert('Underweight')
-   } else if ( bmi >= 18.5 || bmi <= 24.9){
-    alert(' Normal weight')
-   } else if ( bmi >= 25 || bmi <= 29.9) {
+   } else if ( bmi >= 18.5 && bmi <= 24.9){
+    alert('Normal weight')
+   } else if ( bmi >= 25 && bmi <= 29.9) {
     alert('Over weight')
    } else{
     alert('Obese')
@@ -80,7 +80,7 @@ return min * 60;
    return bmi;
   }
  
-  calculateBMI(52,157);
+  calculateBMI(70,1.5);
   
   /* 4. appropiateDrinks
   
@@ -93,8 +93,19 @@ return min * 60;
   
   */
   
+  function appropiateDrinks (age){
+  if(age < 14){
+   return "drink fruit juice";
+  } else if (age < 18){
+  return "drink soda" ;
+  } else if (age < 21){
+   return "drink fruit-flavored beer";
+  } else{
+   return "drink throat-piercing vodka";
+  }
+  }
  
-  appropiateDrinks(22);
+   appropiateDrinks(22);
   
   
   /* 5d. Add two numers or string
@@ -108,7 +119,15 @@ return min * 60;
   
   */
   
-
+function sum (value1, value2) {
+if(typeof(value1) === "number" &&  typeof(value2) === "number"){
+  return value1 + value2;
+} else if (typeof(value1) === "string" && typeof(value2) === "string"){
+  return value1 + " " + value2;
+} else{
+  return  "Enter valid values";
+}
+}
   
   // Function Test
   sum(2, 4); // 6
