@@ -4,17 +4,23 @@
 
 Write a function named minToSec that takes an integer minutes and converts it to seconds.
 
-
 minToSec(50) ➞ 3000
 minToSec(13) ➞ 780
 minToSec(2) ➞ 120
 */
 
 // - Write a Function Decleration for above problem
+function minToSec (min) {
+return min * 60;
+}
+
+
 
   // - Execute the function with required parameter
   minToSec(50);
-  
+  minToSec(50) 
+  minToSec(13)
+  minToSec(2)
   
   /* 2. 
   Create a function named isInRange which validates whether a number n is exclusively within the bounds of lower and upper.
@@ -26,10 +32,20 @@ minToSec(2) ➞ 120
   */
   
   // - Write a Function Decleration for above problem
-  
+  function isInRange (lower, upper, num){
+  if(num > lower && num < upper){
+   return true;
+  } else{
+    return false;
+  }
+  }
+
+
+
+
   // - Execute the function with required parameter
   isInRange(1, 20, 9);
-  
+  isInRange(1, 10, 19); 
   
   /* 3. calculateBMI
   
@@ -49,6 +65,20 @@ minToSec(2) ➞ 120
   
   */
   
+
+  function calculateBMI (weight, height){
+   bmi = weight / (height * height)
+   if(bmi < 18.5){
+   alert('Underweight')
+   } else if ( bmi >= 18.5 || bmi <= 24.9){
+    alert(' Normal weight')
+   } else if ( bmi >= 25 || bmi <= 29.9) {
+    alert('Over weight')
+   } else{
+    alert('Obese')
+   }
+   return bmi;
+  }
  
   calculateBMI(52,157);
   
