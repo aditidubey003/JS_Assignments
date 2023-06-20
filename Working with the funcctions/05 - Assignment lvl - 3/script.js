@@ -10,7 +10,7 @@ minToSec(2) ➞ 120
 */
 
 // - Write a Function Decleration for above problem
-function minToSec (min) {
+function minToSec (min = 0) {
 return min * 60;
 }
 
@@ -32,7 +32,7 @@ return min * 60;
   */
   
   // - Write a Function Decleration for above problem
-  function isInRange (lower, upper, num){
+  function isInRange (lower = 0 , upper = 0, num = 0){
   if(num > lower && num < upper){
    return true;
   } else{
@@ -66,7 +66,7 @@ return min * 60;
   */
   
 
-  function calculateBMI (weight, height){
+  function calculateBMI (weight = 0, height = 0){
    bmi = weight / (height * height)
    if(bmi < 18.5){
    alert('Underweight')
@@ -93,7 +93,7 @@ return min * 60;
   
   */
   
-  function appropiateDrinks (age){
+  function appropiateDrinks (age = 0){
   if(age < 14){
    return "drink fruit juice";
   } else if (age < 18){
@@ -119,11 +119,11 @@ return min * 60;
   
   */
   
-function sum (value1, value2) {
+function sum (value1 = 0, value2 = 0) {
 if(typeof(value1) === "number" &&  typeof(value2) === "number"){
   return value1 + value2;
 } else if (typeof(value1) === "string" && typeof(value2) === "string"){
-  return value1 + " " + value2;
+  return `${value1} ${value2}`;
 } else{
   return  "Enter valid values";
 }
