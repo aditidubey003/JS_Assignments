@@ -1,14 +1,15 @@
 // Select the h1 element and store it in a variable named heading.
-
+let heading = document.querySelector('h1')
 
 // Check the typeof heading and log it.
-
+console.log(typeof heading)
 
 // Change the color of heading to black.
-
+heading.style.color = "black";
 
 // Select all the hr elements and store it in a variable named allHrs using querySelectorAll
-
+let allHrs = document.querySelectorAll('hr')
+console.log(allHrs);
 /* 
 Convert the NodeList returned by querySelectorAll to Array using Array.from() or spread operator and store it in allHrsArray
 
@@ -18,22 +19,33 @@ HINT:
 let allHrsArray = Array.from(allHrs)
 */
 
+let allHrsArray = Array.from(allHrs);
+console.log(allHrsArray)
 // Set the border of the all the hr elements to "1px solid tomato"
 
 
+allHrsArray.forEach(element => {
+  element.style.border = "1px solid tomato" ;
+});
+
 
 // Change the background of all the hr to "antiquewhite" using for of loop.
-
+allHrsArray.forEach(element => {
+  element.style.background = "antiquewhite";
+});
 
 
 // Change the 'border-radius' of all the hr to "5px" using array.
-
+allHrsArray.forEach(element => {
+  element.style.borderRadius = "5px" ;
+});
 
 // Change the alignment of the heading(h1) to center.
-
+heading.style.textAlign = "center"
 
 
 // Change the font size of the heading to 3rem.
+heading.style.fontSize = "3rem"
 
 
 
@@ -41,12 +53,22 @@ let allHrsArray = Array.from(allHrs)
 // Change the border of hr with class 'image' to `2px solid purple`
 // First choose all the hr with class image, then use forEaxh for selecting all elements.
 
+let allImageHR = document.querySelectorAll('hr.image')
+allImageHR.forEach(element => {
+  element.style.border = `2px solid purple`;
+});
+
 
 // Hide the box number 17 (last box).
 // To hide the box we will use display: none
+let lastBox = document.querySelector('.seventeen');
+lastBox.style.display = "none"
 
 
 // Change the border of all the hr element from solid to dashed type
+allHrsArray.forEach(element => {
+  element.style.border = "dashed";
+});
 
 
 // Create a pragraph element and store it in variable named 'para' using `createElement`
