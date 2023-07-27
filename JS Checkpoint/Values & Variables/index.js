@@ -43,7 +43,6 @@ if (sum == 24) {
 // It will result in (`Hurray 🔥 You are right!`)
 
 
-
 // 6. What will be the output of the code given? Explain why?
 
 let sum = prompt(`What will be the result of 12 + 12?`);
@@ -99,3 +98,5 @@ undefined + 21;
 alert( null || 2 || undefined );
 
 // first truthy value - 2
+
+
